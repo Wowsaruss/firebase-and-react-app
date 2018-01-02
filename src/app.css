@@ -1,0 +1,15 @@
+body {
+    background-color: bisque;
+}
+.form {
+    text-align: center;
+    border: black solid 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ul {
+    list-style-type: none;
+    padding: 0px;
+}

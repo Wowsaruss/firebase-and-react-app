@@ -4,8 +4,11 @@ import fire from './fire';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { messages: [] }; // <- set up react state
+    this.state = {
+      messages: []
+    };
   }
+
   componentWillMount(){
     /* Create reference to messages in Firebase Database */
     let messagesRef = fire.database().ref('messages').orderByKey().limitToLast(100);
